@@ -1,3 +1,4 @@
+
 // -- створити об'єкт (не меньше 5ти властивостей) який описує
 // - собаку
 // - людину
@@ -22,25 +23,25 @@
 // - 3 5 людей
 // - з 5 автомобілів
 
-// const arr = [
-//     { name: 'Bars', age: 12, color: 'black', weight: 35, height: 40 },
-//     { name: 'Rex', age: 14, color: 'brown', weight: 40, height: 45 },
-//     { name: 'Tom', age: 8, color: 'grey', weight: 32, height: 37 },
-//     { name: 'Range', age: 10, color: 'black', weight: 20, height: 25 },
-//     { name: 'Hatiko', age: 2, color: 'white', weight: 10, height: 20 },
-//     { name: 'Roman', age: 31, nationality: 'Ukraine', weight: 78, height: 172 },
-//     { name: 'Yura', age: 18, nationality: 'Ukraine', weight: 55, height: 175 },
-//     { name: 'Maks', age: 1, nationality: 'Ukraine', weight: 10, height: 50 },
-//     { name: 'Nazar', age: 27, nationality: 'Ukraine', weight: 70, height: 180 },
-//     { name: 'Tina', age: 25, nationality: 'Ukraine', weight: 58, height: 178 },
-//     { model: 'Honda', type: 'coupe', color: 'black', power: 187, torque: 230 },
-//     { model: 'Opel', type: 'SUV', color: 'silver', power: 147, torque: 210 },
-//     { model: 'Toyota', type: 'cedan', color: 'grey', power: 277, torque: 325 },
-//     { model: 'BMW', type: 'SUV', color: 'black', power: 230, torque: 250 },
-//     { model: 'Audi', type: 'cedan', color: 'black', power: 230, torque: 250 },
-// ]
+const arr = [
+    { name: 'Bars', age: 12, color: 'black', weight: 35, height: 40 },
+    { name: 'Rex', age: 14, color: 'brown', weight: 40, height: 45 },
+    { name: 'Tom', age: 8, color: 'grey', weight: 32, height: 37 },
+    { name: 'Range', age: 10, color: 'black', weight: 20, height: 25 },
+    { name: 'Hatiko', age: 2, color: 'white', weight: 10, height: 20 },
+    { name: 'Roman', age: 31, nationality: 'Ukraine', weight: 78, height: 172 },
+    { name: 'Yura', age: 18, nationality: 'Ukraine', weight: 55, height: 175 },
+    { name: 'Maks', age: 1, nationality: 'Ukraine', weight: 10, height: 50 },
+    { name: 'Nazar', age: 27, nationality: 'Ukraine', weight: 70, height: 180 },
+    { name: 'Tina', age: 25, nationality: 'Ukraine', weight: 58, height: 178 },
+    { model: 'Honda', type: 'coupe', color: 'black', power: 187, torque: 230 },
+    { model: 'Opel', type: 'SUV', color: 'silver', power: 147, torque: 210 },
+    { model: 'Toyota', type: 'cedan', color: 'grey', power: 277, torque: 325 },
+    { model: 'BMW', type: 'SUV', color: 'black', power: 230, torque: 250 },
+    { model: 'Audi', type: 'cedan', color: 'black', power: 230, torque: 250 },
+]
 
-// console.log(arr);
+console.log(arr);
 
 
 
@@ -108,6 +109,7 @@
 // 				{name: 'olya', age: 31, status: false},
 // 				{name: 'max', age: 31, status: true}
 // 			];
+
 // - звернутися в відповідну ячейку масиву і відповідний параметр об'єкта і вивести в консольх наступне
 // - статус Андрія
 // - статус Максима
@@ -129,69 +131,3 @@
 // console.log(users[5].age, users[5].status);
 
 
-
-// -Візьміть файл template1.html, підключіть до нього скрипт, і працюйте в ньому.
-
-// -- Напишіть код,  який за допомоги document.getElementById або document.getElementsByClassName або document.getElementsByTagName :
-// - отримує текст з параграфа з id "content"
-
-let contentId = document.getElementById("content");
-console.log(contentId);
-
-// - отримує текст з блоку з id "rules"
-
-let rulesId = document.getElementById("rules");
-console.log(rulesId);
-
-// - замініть текст параграфа з id 'content' на будь-який інший
-
-let contInnerTxt = document.getElementById("content");
-contInnerTxt.innerText ='Here is changed text now!';
-
-// - замініть текст параграфа з id 'rules' на будь-який інший
-
-let rulesInnerTxt = document.getElementById("rules");
-rulesInnerTxt.innerText ='Here is new paragraph text now!';
-
-// - змініть кожному елементу колір фону на червоний
-
-
-let divBack = document.getElementsByTagName('div');
-divBack[0].style.backgroundColor = 'red';
-
-let liBack = document.getElementsByTagName('li');
-for (let i = 0; i < liBack.length; i++){
-    liBack[i].style.backgroundColor = 'red';
-}
-
-let pBack = document.getElementsByTagName('p');
-pBack[0].style.backgroundColor = 'red';
-
-// - змініть кожному елементу колір тексту на синій
-
-let divText = document.getElementsByTagName('div');
-divText[0].style.color = 'blue';
-
-let liText = document.getElementsByTagName('li');
-for (let i = 0; i < liBack.length; i++){
-    liText[i].style.color = 'blue';
-}
-
-let pText = document.getElementsByTagName('p');
-pText[0].style.color = 'blue';
-
-// - отримати весь список класів елемента з id=rules і вивести їх в console.log
-
-let classRules = document.getElementsByClassName("fc bp");
-console.log(classRules);
-
-// - отримати всі елементи з класом fc_rules
-
-let fcRules = document.getElementsByClassName('fc_rules');
-console.log(fcRules);
-
-// - поміняти колір тексту у всіх елементів fc_rules на червоний
-
-for (let i = 0; i < fcRules.length; i++) {
-   fcRules[i].style.color = 'red';
-}
