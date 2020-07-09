@@ -22,8 +22,8 @@
 
 // -- отримує текст який зберігається в елементі з класом listElement2
 
-// let textListEl2 = document.getElementsByClassName('listElement2');
-// console.log(textListEl2[0].innerText);
+let textListEl2 = document.getElementsByClassName('listElement2');
+console.log(textListEl2[0].innerText);
 
 
 
@@ -83,11 +83,11 @@
 
 // -- отримує елемент з класом content_1 та заміняє  в ньому текст на довільний. Текст отримати з prompt()
 
-let content = document.getElementsByClassName('content_1');
-let chngText = prompt('Введіть довільний текст');
-for (let i = 0; i < content.length; i++) {
-    content[i].innerText = chngText;
-}
+// let content = document.getElementsByClassName('content_1');
+// let chngText = prompt('Введіть довільний текст');
+// for (let i = 0; i < content.length; i++) {
+//     content[i].innerText = chngText;
+// }
 
 // -- отримати елементи p та змінити їм paddin на довільне значення
 
