@@ -376,74 +376,74 @@
 // 24 - З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
 
 
-let users = [
-    {
-        name: 'vasya',
-        age: 31,
-        status: false,
-        address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
-    }, 
-    {
-        name: 'petya',
-        age: 30,
-        status: true,
-        address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
-    }, 
-    {
-        name: 'kolya',
-        age: 29,
-        status: true,
-        address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
-    }, 
-    {
-        name: 'olya',
-        age: 28,
-        status: false,
-        address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
-    }, 
-    {
-        name: 'max',
-        age: 30,
-        status: true,
-        address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
-    }, 
-    {
-        name: 'anya',
-        age: 31,
-        status: false,
-        address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
-    }, 
-    {
-        name: 'oleg',
-        age: 28,
-        status: false,
-        address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
-    }, 
-    {
-        name: 'andrey',
-        age: 29,
-        status: true,
-        address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
-    }, 
-    {
-        name: 'masha',
-        age: 30,
-        status: true,
-        address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
-    }, 
-    {
-        name: 'olya',
-        age: 31,
-        status: false,
-        address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
-    }, 
-    {
-        name: 'max',
-        age: 31,
-        status: true,
-        address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
-    }
-];
+// let users = [
+//     {
+//         name: 'vasya',
+//         age: 31,
+//         status: false,
+//         address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
+//     }, 
+//     {
+//         name: 'petya',
+//         age: 30,
+//         status: true,
+//         address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
+//     }, 
+//     {
+//         name: 'kolya',
+//         age: 29,
+//         status: true,
+//         address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
+//     }, 
+//     {
+//         name: 'olya',
+//         age: 28,
+//         status: false,
+//         address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
+//     }, 
+//     {
+//         name: 'max',
+//         age: 30,
+//         status: true,
+//         address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
+//     }, 
+//     {
+//         name: 'anya',
+//         age: 31,
+//         status: false,
+//         address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
+//     }, 
+//     {
+//         name: 'oleg',
+//         age: 28,
+//         status: false,
+//         address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
+//     }, 
+//     {
+//         name: 'andrey',
+//         age: 29,
+//         status: true,
+//         address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
+//     }, 
+//     {
+//         name: 'masha',
+//         age: 30,
+//         status: true,
+//         address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
+//     }, 
+//     {
+//         name: 'olya',
+//         age: 31,
+//         status: false,
+//         address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
+//     }, 
+//     {
+//         name: 'max',
+//         age: 31,
+//         status: true,
+//         address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
+//     }
+// ];
 
 // let adDress = [];
 
@@ -494,7 +494,7 @@ let users = [
 //         за допомоги document.createElement, розділивши всі властивості по своїм блокам , 
 // //         блок з адресою зробити окремим блоком, з блоками для кожної властивості
 
-//  let container = document.getElementById("container");
+// let container = document.getElementById("container");
 // for (const user of users) {
 //     let outerDiv = document.createElement("div");
 //     outerDiv.classList.add("user");
@@ -543,26 +543,13 @@ let users = [
 
 // 91 - З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
 // user
-// for (let i = 0; i < usersWithId.Length; i++)
+// for (let i = 0; i < usersWithId.length; i++)
 //     {
-//         for (let j = 0; j < citiesWithId; j++)
+//         for (let j = 0; j < citiesWithId.length; j++)
 //         {
 //             if (usersWithId[i].id === citiesWithId[j].user_id) 
 //             {
-//                 const user = {};
-
-//                 for (let prop in usersWithId[i]) {
-    
-//                 user[prop] = usersWithId[i][prop];
-    
-//             }
-//             for (let prop in citiesWithId[j]) {
-                
-//                 user[prop] = citiesWithId[j][prop];
-                
-//             }
-
-//                 usersWithId.push(user)
+//                 usersWithId[i].address = citiesWithId[j];
 //             }
             
 //         }
@@ -577,41 +564,125 @@ let users = [
 
 
 
-let div = document.createElement('div');
-div.id='Lviv';
-div.classList.add('hello');
-div.innerText='Hello Lviv';
-document.body.append(div);
+// let div = document.createElement('div');
+// div.id='Lviv';
+// div.classList.add('hello');
+// div.innerText='Hello Lviv';
+// document.body.appendChild(div);
 
 
-let textById = document.getElementById('Lviv');
-console.log(textById.textContent);
+// let textById = document.getElementById('Lviv');
+// console.log(textById.textContent);
 
-let textByClass = document.getElementsByClassName('hello');
-for(let text of textByClass)
-{
-    console.log(text.textContent);
-}
+// let textByClass = document.getElementsByClassName('hello');
+// for(let text of textByClass)
+// {
+//     console.log(text.textContent);
+// }
 
-let textByTag = document.getElementsByTagName('div');
-    console.log(textByTag[1].textContent);
+// let textByTag = document.getElementsByTagName('div');
+//     console.log(textByTag[1].textContent);
 
 
 
 // 101 - змінити цей текст використовуючи селектори id, class,  tag
 
-textById.innerText = 'New text by id';
-console.log(textById.textContent);
+// textById.innerText = 'New text by id';
+// console.log(textById.textContent);
 
-for (text of textByClass) {
-    text.innerText = 'New text by Class';
-    console.log(text.textContent);
-}
+// for (text of textByClass) {
+//     text.innerText = 'New text by Class';
+//     console.log(text.textContent);
+// }
 
-textByTag[1].textContent = 'New text by Tag';
-console.log(textByTag[1].textContent);
+// textByTag[1].textContent = 'New text by Tag';
+// console.log(textByTag[1].textContent);
 
 
 
 // 102 - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
+
+// let heightWidthById = document.getElementById('Lviv');
+// heightWidthById.style.height = '50px';
+// heightWidthById.style.width = '50%';
+
+
+// let heightWidthByClass = document.getElementsByClass('hello');
+// for (heightWidth of heightWidthByClass) {
+//     heightWidth.style.height = '50px';
+//     heightWidth.style.width = '100%';
+// }
+
+// let heightWidthByTagName = document.getElementsByTagName('div');
+
+// for (heightWidth of heightWidthByTagName) {
+//     heightWidth.style.height = '50px';
+//     heightWidth.style.width = '50%';
+// }
+
+
+
+// 103 - за допомоги document.createElement та appendChild створити таблицю на 1 рядок 
+//      з трьома ячейками всередені
+
+// let table = document.createElement('div');
+// document.body.appendChild(table);
+// table.classList.add('tableStyle');
+// createTable(table, 3, 1);
+
+ 
+
+
+
+// 104 - за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків 
+//          з трьома ячейками всередені
+// 
+// for(let i = 0; i < 10; i++) {
+//     let table = document.createElement('div');
+//     document.body.appendChild(table);
+//     table.classList.add('tableStyle');
+    
+    
+//         let cell = document.createElement('div');
+//         cell.classList.add('cellStyle');
+//         table.appendChild(cell);
+//         cell.innerText = 'Cell';
+    
+// }
+
+// 105 - за допомоги document.createElement, 
+//      appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені 
+
+//  for(let i = 0; i < 10; i++) {
+//     let table = document.createElement('div');
+//     document.body.appendChild(table);
+//     table.classList.add('tableStyle');
+    
+//     for(let i = 0; i < 5; i++){
+//         let cell = document.createElement('div');
+//         cell.classList.add('cellStyle');
+//         table.appendChild(cell);
+//         cell.innerText = 'Cell';
+//     }
+// }
+
+
+
+// 106 - за допомоги document.createElement, appendChild та 2х циклів створити таблицю 
+//       на n рядків з m ячейками всередені. n та m отримати з prompt
+// let n = prompt ('Введіть кількість рядків');
+// let m = prompt ('Введіть кількість клітинок');
+
+// for(let i = 0; i < n; i++) {
+//         let table = document.createElement('div');
+//         document.body.appendChild(table);
+//         table.classList.add('tableStyle');
+        
+//         for(let i = 0; i < m; i++){
+//             let cell = document.createElement('div');
+//             cell.classList.add('cellStyle');
+//             table.appendChild(cell);
+//             cell.innerText = 'Cell';
+//         }
+//     }
 
